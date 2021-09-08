@@ -35,6 +35,12 @@ android {
         dataBinding = true
     }
 
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
     splits {
         abi {
             enable true
@@ -48,6 +54,11 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    //permission
+    implementation 'com.hjq:xxpermissions:5.2'
+    //popup
+    implementation 'com.lxj:xpopup:2.2.23'
 
     //navigation
     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'

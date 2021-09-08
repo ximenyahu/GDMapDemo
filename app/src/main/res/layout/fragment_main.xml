@@ -12,7 +12,7 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/bt_start_end"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="21dp"
@@ -20,5 +20,15 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/bt_start_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="46dp"
+            android:text="Second"
+            app:layout_constraintStart_toStartOf="@+id/bt_start_end"
+            app:layout_constraintTop_toBottomOf="@+id/bt_start_end" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

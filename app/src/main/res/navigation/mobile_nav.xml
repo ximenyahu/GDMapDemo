@@ -11,9 +11,16 @@
         <action
             android:id="@+id/action_mainFragment_to_startEndNavFragment"
             app:destination="@id/startEndNavFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
     </fragment>
     <fragment
         android:id="@+id/startEndNavFragment"
         android:name="com.simon.gdmapdemo.StartEndNavFragment"
         android:label="StartEndNavFragment" />
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.simon.gdmapdemo.SecondFragment"
+        android:label="SecondFragment" />
 </navigation>
